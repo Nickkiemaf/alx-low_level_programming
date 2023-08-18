@@ -1,8 +1,7 @@
+include "main.h"
 /**
 * main - causes an infinite loop
-* Variable - Interger i
-* Return: 0
-*/
+* Return: 0 */
 int main(void)
 {
         int i;
