@@ -1,4 +1,8 @@
 #include "main.h"
+/**
+ * Positive_or_negative - Prints if an interger is 
+ * positive or negative
+ * Return - void
 
 void positive_or_negative(int i)
 {
