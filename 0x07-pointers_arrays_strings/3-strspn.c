@@ -1,10 +1,9 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * Function that gets the length of a prefix substring
- * s - initial segment of a string
- * accept - second character string
- * return - returns n byte in initial segment
+ * _strspn - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
  */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -12,21 +11,18 @@ unsigned int _strspn(char *s, char *accept)
 	int r;
 
 	while (*s)
-{
-	/*code goes here*/
-}
-for (r = 0; accept[r]; r++)
-{
-/* Code goes here */
-}
-if (*s == accept[r])
-{
-n++;
-break;
-}
-else if (accept[r + 1] == '\0')
-return (n);
-s++;
-}
-return (n);
+	{
+		for (r = 0; accept[r]; r++)
+		{
+			if (*s == accept[r])
+			{
+				n++;
+				break;
+			}
+			else if (accept[r + 1] == '\0')
+				return (n);
+		}
+		s++;
+	}
+	return (n);
 }

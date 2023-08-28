@@ -1,14 +1,15 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 /**
- * _diagsums - print the sum of two diagonals
- * a -  string
- * size - array
- * reruns - 0
+ * print_diagsums - Entry point
+ * @a: input
+ * @size: second input
+ * Return: Always 0 (Success)
  */
 void print_diagsums(int *a, int size)
 {
 	int sum1, sum2, y;
+
 	sum1 = 0;
 	sum2 = 0;
 
