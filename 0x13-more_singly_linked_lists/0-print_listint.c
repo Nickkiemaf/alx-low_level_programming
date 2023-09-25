@@ -3,7 +3,6 @@
 /**
  * print_listint - prints elements in the linked list
  * @h: the head of the list
- *
  * Return: the number of nodes
  */
 size_t print_listint(const listint_t *h)
@@ -13,7 +12,7 @@ size_t print_listint(const listint_t *h)
 
 	while (cursor != NULL)
 	{
-		printf("%d\n", cursor->x);
+		printf("%d\n", cursor->n);
 		count += 1;
 		cursor = cursor->next;
 	}
